@@ -62,7 +62,7 @@ const Pagination = () => {
       {/* Displaying buttons and current page number below the table */}
       <div style={{ marginTop: '20px', textAlign: 'center' }}>
         <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-        <span style={{ margin: '0 15px' }}>{currentPage}</span>
+        <p style={{ margin: '0 15px' }}>{currentPage}</p>
         <button onClick={nextPage} disabled={currentPage === Math.ceil(employees.length / employeesPerPage)}>Next</button>
       </div>
     </div>
